@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<package format="3">
+  <name>rrm_simple_robot_model</name>
+  <version>0.0.0</version>
+  <description>The rrm_simple_robot_model package</description>
+  <maintainer email="michaldobis@todo.todo">michaldobis</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rviz2</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+

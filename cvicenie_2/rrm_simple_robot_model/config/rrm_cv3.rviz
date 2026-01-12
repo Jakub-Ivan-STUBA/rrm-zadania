@@ -1,0 +1,36 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+    Properties:
+      Displays:
+        - Alpha: 1
+          Class: rviz/RobotModel
+          Color: 255; 25; 0
+          Enabled: true
+          Name: RobotModel
+          Robot Description: robot_description
+      Name: Displays
+    Splitter Orientation: Horizontal
+Visualization Manager:
+  Class: ""
+  Default Light: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: base_link
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+      Name: Interact
+    - Class: rviz/MoveCamera
+      Name: Move Camera
+    - Class: rviz/Select
+      Name: Select
+    - Class: rviz/FocusCamera
+      Name: Focus Camera
+  Transform Status:
+    - Level: Ok
+      Name: Transform
+      Status: Transform OK

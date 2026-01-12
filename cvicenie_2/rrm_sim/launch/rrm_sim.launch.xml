@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="rrm_sim" exec="robot_sim_node" name="rrm_sim" output="screen"/>
+	<include file="$(find-pkg-share rrm_simple_robot_model)/launch/robot_state_publisher.launch.xml"/>
+</launch>
