@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>eigen_example</name>
+  <version>0.0.0</version>
+  <description>The eigen_example package for ROS2</description>
+
+  <maintainer email="michal.dobis@stuba.sk">Michal Dobis</maintainer>
+
+  <license>TODO</license>
+
+  <!-- Build system -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Dependencies for building and running -->
+  <depend>rclcpp</depend>
+  <depend>Eigen3</depend>
+
+  <!-- Export section for build system -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
