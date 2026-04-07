@@ -1,0 +1,81 @@
+# Rozdelenie modelov pre projekt 
+
+| Číslo | Študent | Model |
+| :--- | :--- | :--- |
+| 1 | Ahapova Yuliia | truck |
+| 2 | Arvay Martin | tie |
+| 3 | Barla Jakub | f22 |
+| 4 | Bobrov Aleksandr | truck |
+| 5 | Boltian Matvii | tie |
+| 6 | Brezina Jakub Karol | f22 |
+| 7 | Budylin Viktor | truck |
+| 8 | Čerešník Matej | tie |
+| 9 | Dobrodenka Samuel | f22 |
+| 10 | Domonkos András | truck |
+| 11 | Domonkos Bence | tie |
+| 12 | Donoval Martin | f22 |
+| 13 | Ďurmek Dominik | truck |
+| 14 | Dzvoňár Imrich | tie |
+| 15 | Eliaš Adam | f22 |
+| 16 | Eremenko Olga | truck |
+| 17 | Gališin Lukáš | tie |
+| 18 | Gavlas Dominik | f22 |
+| 19 | Grmanová Jana | truck |
+| 20 | Grolmus Juraj | tie |
+| 21 | Handzuš Matej | f22 |
+| 22 | Harmady Martin | truck |
+| 23 | Hatala Matej | tie |
+| 24 | Chukhir Heorhii | f22 |
+| 25 | Ievgrafova Ievgeniia | truck |
+| 26 | Jantošovič Samuel | tie |
+| 27 | Kalchenko Maksym | f22 |
+| 28 | Kanta Martin | truck |
+| 29 | Khylko Ivan | tie |
+| 30 | Király Pavel | f22 |
+| 31 | Kiriienko Yehor | truck |
+| 32 | Kleman Jakub | tie |
+| 33 | Kobzar Maksym | f22 |
+| 34 | Kolar Peter Simon | truck |
+| 35 | Köplinger Adam | tie |
+| 36 | Kotian Marek | f22 |
+| 37 | Kovalenko Artem | truck |
+| 38 | Kozel Miroslav | tie |
+| 39 | Krajčovič Branislav | f22 |
+| 40 | Kráľ Filip | truck |
+| 41 | Kučera Miroslav | tie |
+| 42 | Kuchár David | f22 |
+| 43 | Lojkó Filip | truck |
+| 44 | Lovkin Nikita | tie |
+| 45 | Magyar Matúš | f22 |
+| 46 | Marcinek Patrik | truck |
+| 47 | Maszay Peter | tie |
+| 48 | Medvedenko Oleksii | f22 |
+| 49 | Mihalík Dalibor | truck |
+| 50 | Mikhalko Oleksandra | tie |
+| 51 | Milkevych Danylo | f22 |
+| 52 | Moravčík Matej | truck |
+| 53 | Nebus Matúš | tie |
+| 54 | Ognev Dmitrii | f22 |
+| 55 | Ondrejka Matúš | truck |
+| 56 | Orel Alexander | tie |
+| 57 | Pavlikovský Roman | f22 |
+| 58 | Petrishko Dmytro | truck |
+| 59 | Piško Branislav | tie |
+| 60 | Potapov Arsenii | f22 |
+| 61 | Pusztai Matúš | truck |
+| 62 | Rudenko Roman | tie |
+| 63 | Sidenko Denys | f22 |
+| 64 | Smetaniuk Andrii | truck |
+| 65 | Sokolova Ekaterina | tie |
+| 66 | Spodniak Tomáš | f22 |
+| 67 | Stanislavskyi Mykola | truck |
+| 68 | Statsenko Daniil | tie |
+| 69 | Šubika Samuel | f22 |
+| 70 | Toman Samuel | truck |
+| 71 | Tselik Anton | tie |
+| 72 | Vikhot Yulianna | f22 |
+| 73 | Vozárik Samuel | truck |
+| 74 | Vu Thanh Tuan | tie |
+| 75 | Yerokhin Hlib | f22 |
+| 76 | Zelenskyi Mykyta | truck |
+| 77 | Zhavoronkov Denis | tie |
