@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <xacro:macro name="camera" params="prefix">
+
+      <link name="${prefix}link_depthtf" />
+
+        <link name="${prefix}kinect_mesh">
+            <visual>
+                <origin rpy="0 0 1.57" xyz="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://abb_model/meshes/kinect/visual/kinect_sensor.stl" scale ="0.001 0.001 0.001"/>
+                </geometry>
+                <material name="abb_grey">
+                    <color rgba="0.2 0.2 0.2 1" />
+                </material>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 1.57" />
+                <geometry>
+                    <mesh filename="package://abb_model/meshes/kinect/collision/kinect_sensor.stl" scale ="0.001 0.001 0.001"/>
+                </geometry>
+                <material name="yellow"/>
+            </collision>
+            <inertial>
+                <mass value="1.0" />
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <inertia ixx="0.1" ixy="0.01" ixz="0.01" iyy="0.1" iyz="0.01" izz="0.1" />
+            </inertial>
+        </link>
+
+        <joint name="${prefix}to_kinect_mesh" type="fixed">
+            <parent link="${prefix}tool0"/>
+            <child link="${prefix}kinect_mesh"/>
+            <origin xyz="0 0 0.015" rpy="0 0 0"/>
+
+        </joint>
+
+        <joint name="${prefix}to_link_depthtf" type="fixed">
+            <parent link="${prefix}tool0"/>
+            <child link="${prefix}link_depthtf"/>
+            <!--origin xyz="0 0 0.015" rpy="0 0 0"/-->
+            <origin xyz="0 0 0" rpy="-1.57 0 -1.57"/>
+        </joint>
+
+    </xacro:macro>
+</robot>

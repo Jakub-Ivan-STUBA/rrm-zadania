@@ -1,0 +1,306 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <xacro:macro name="abb_irb4600_60_205" params="prefix">
+    <!-- link list -->
+        <link name="world"/>
+
+        <joint name="to_world" type="fixed">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <parent link="world"/>
+            <child link="${prefix}base_link"/>
+        </joint>
+
+        <link name="${prefix}base_link">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://abb_model/meshes/abb_irb4600_60_205/visual/base_link.stl"/>
+                </geometry>
+                <material name="abb_white">
+                    <color rgba="0.8 0.8 0.8 1" />
+                </material>
+            </visual>
+            <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://abb_model/meshes/abb_irb4600_60_205/collision/base_link.stl"/>
+                </geometry>
+                <material name="yellow">
+                    <color rgba="0 1 1 1"/>
+            </material>
+            </collision>
+            <inertial>
+                  <origin xyz="0 0 0" rpy="0 0 0"/>
+                  <mass value="1"/>
+                  <inertia ixx="0.05" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.05"/>
+            </inertial>
+        </link>
+
+        <link name="${prefix}link_1">
+            <visual>
+              <origin xyz="0 0 0" rpy="0 0 0" />
+              <geometry>
+                <mesh filename="package://abb_model/meshes/abb_irb4600_60_205/visual/link_1.stl"/>
+              </geometry>
+              <material name="abb_white"/>
+            </visual>
+
+            <collision>
+             <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+              <mesh filename="package://abb_model/meshes/abb_irb4600_60_205/collision/link_1.stl"/>
+            </geometry>
+            <material name="yellow"/>
+            </collision>
+            <inertial>
+                  <origin xyz="0 0 0" rpy="0 0 0"/>
+                  <mass value="1"/>
+                  <inertia ixx="0.05" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.05"/>
+            </inertial>
+        </link>
+
+        <link name="${prefix}link_2">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://abb_model/meshes/abb_irb4600_60_205/visual/link_2.stl"/>
+                </geometry>
+                <material name="abb_white"/>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://abb_model/meshes/abb_irb4600_60_205/collision/link_2.stl"/>
+                </geometry>
+                <material name="yellow"/>
+            </collision>
+            <inertial>
+                  <origin xyz="0 0 0" rpy="0 0 0"/>
+                  <mass value="1"/>
+                  <inertia ixx="0.05" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.05"/>
+            </inertial>
+        </link>
+
+        <link name="${prefix}link_3">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://abb_model/meshes/abb_irb4600_60_205/visual/link_3.stl"/>
+                </geometry>
+                <material name="abb_white"/>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://abb_model/meshes/abb_irb4600_60_205/collision/link_3.stl"/>
+                </geometry>
+                <material name="yellow"/>
+            </collision>
+            <inertial>
+                  <origin xyz="0 0 0" rpy="0 0 0"/>
+                  <mass value="1"/>
+                  <inertia ixx="0.05" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.05"/>
+            </inertial>
+        </link>
+
+        <link name="${prefix}link_4">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://abb_model/meshes/abb_irb4600_60_205/visual/link_4.stl"/>
+                </geometry>
+                <material name="abb_white"/>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://abb_model/meshes/abb_irb4600_60_205/collision/link_4.stl"/>
+                </geometry>
+                <material name="yellow"/>
+            </collision>
+            <inertial>
+                  <origin xyz="0 0 0" rpy="0 0 0"/>
+                  <mass value="1"/>
+                  <inertia ixx="0.05" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.05"/>
+            </inertial>
+        </link>
+
+        <link name="${prefix}link_5">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://abb_model/meshes/abb_irb4600_60_205/visual/link_5.stl"/>
+                </geometry>
+                <material name="abb_white"/>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://abb_model/meshes/abb_irb4600_60_205/collision/link_5.stl"/>
+                </geometry>
+                <material name="yellow"/>
+            </collision>
+            <inertial>
+                  <origin xyz="0 0 0" rpy="0 0 0"/>
+                  <mass value="1"/>
+                  <inertia ixx="0.05" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.05"/>
+            </inertial>
+        </link>
+
+        <link name="${prefix}link_6">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://abb_model/meshes/abb_irb4600_60_205/visual/link_6.stl"/>
+                </geometry>
+                <material name="abb_grey">
+                    <color rgba="0.2 0.2 0.2 1" />
+                </material>
+            </visual>
+            <collision>
+               <origin xyz="0 0 0" rpy="0 0 0" />
+                  <geometry>
+                     <mesh filename="package://abb_model/meshes/abb_irb4600_60_205/collision/link_6.stl"/>
+                  </geometry>
+                  <material name="yellow"/>
+            </collision>
+            <inertial>
+                  <origin xyz="0 0 0" rpy="0 0 0"/>
+                  <mass value="1"/>
+                  <inertia ixx="0.05" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.05"/>
+            </inertial>
+        </link>
+
+        <link name="${prefix}tool0"/>
+        <!-- end of link list -->
+
+        <!-- TODO ALL JOINT LIMITS limits are edited and reduced to lower values-->
+        <!-- joint list -->
+
+        <joint name="${prefix}joint_1" type="revolute">
+            <origin xyz="0 0 0.1535" rpy="1.10409999285604E-14 0 0" />
+            <parent link="${prefix}base_link"/>
+            <child link="${prefix}link_1"/>
+            <axis xyz="0 0 1" />
+            <limit lower="-2.62" upper="2.62" effort="1000" velocity="3.05"/>
+        </joint>
+
+        <joint name="${prefix}joint_2" type="revolute">
+        <origin xyz="0.174999999999998 -0.0515489073390827 0.341500000000001" rpy="-1.57772181044202E-30 0 0" />
+            <parent link="${prefix}link_1"/>
+            <child link="${prefix}link_2"/>
+            <axis xyz="0 1 0"/>
+            <limit lower="-1.57" upper="1.57" effort="1000" velocity="3.05"/>
+        </joint>
+
+        <joint name="${prefix}joint_3" type="revolute">
+            <origin xyz="0 0 0.9" rpy="-1.11022302462516E-14 0 0" />
+            <parent link="${prefix}link_2"/>
+            <child link="${prefix}link_3"/>
+            <axis xyz="0 1 0"/>
+            <limit lower="-3.14" upper="1.31" effort="1000" velocity="4.36"/>
+        </joint>
+
+        <joint name="${prefix}joint_4" type="revolute">
+            <origin xyz="0.331499999999985 0.0515489073390958 0.175000000000008" rpy="0 0 0" />
+            <parent link="${prefix}link_3"/>
+            <child link="${prefix}link_4"/>
+            <axis xyz="1 0 0"/>
+            <limit lower="-6.98" upper="6.98" effort="1000" velocity="4.36"/>
+        </joint>
+
+        <joint name="${prefix}joint_5" type="revolute">
+            <origin xyz="0.628499999999995 0 0" rpy="0 0 0" />
+            <parent link="${prefix}link_4"/>
+            <child link="${prefix}link_5"/>
+            <axis xyz="0 1 0"/>
+            <limit lower="-2.09" upper="2.18" effort="1000" velocity="4.36"/>
+        </joint>
+
+        <joint name="${prefix}joint_6" type="revolute">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <parent link="${prefix}link_5"/>
+            <child link="${prefix}link_6"/>
+            <axis xyz="1 0 0"/>
+            <limit lower="-6.98" upper="6.98" effort="1000" velocity="6.28"/>
+        </joint>
+
+        <joint name="${prefix}joint_6-tool0" type="fixed">
+            <parent link="${prefix}link_6"/>
+            <child link="${prefix}tool0"/>
+            <origin xyz="0.135 0 0" rpy="0 1.570796 0"/>
+        </joint>
+
+        <transmission name="tran1">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="joint_1">
+                <hardwareInterface>PositionJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="motor_1">
+                <hardwareInterface>PositionJointInterface</hardwareInterface>
+                <mechanicalReduction>1000</mechanicalReduction>
+            </actuator>
+        </transmission>
+
+        <transmission name="tran2">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="joint_2">
+                <hardwareInterface>PositionJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="motor_2">
+                <hardwareInterface>PositionJointInterface</hardwareInterface>
+                <mechanicalReduction>1000</mechanicalReduction>
+            </actuator>
+        </transmission>
+
+        <transmission name="tran3">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="joint_3">
+                <hardwareInterface>PositionJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="motor_3">
+                <hardwareInterface>PositionJointInterface</hardwareInterface>
+                <mechanicalReduction>1000</mechanicalReduction>
+            </actuator>
+        </transmission>
+
+        <transmission name="tran4">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="joint_4">
+                <hardwareInterface>PositionJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="motor_4">
+                <hardwareInterface>PositionJointInterface</hardwareInterface>
+                <mechanicalReduction>1000</mechanicalReduction>
+            </actuator>
+        </transmission>
+
+        <transmission name="tran5">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="joint_5">
+                <hardwareInterface>PositionJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="motor_5">
+                <hardwareInterface>PositionJointInterface</hardwareInterface>
+                <mechanicalReduction>1000</mechanicalReduction>
+            </actuator>
+        </transmission>
+
+        <transmission name="tran6">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="joint_6">
+                <hardwareInterface>PositionJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="motor_6">
+                <hardwareInterface>PositionJointInterface</hardwareInterface>
+                <mechanicalReduction>1000</mechanicalReduction>
+            </actuator>
+        </transmission>
+
+
+
+
+
+    </xacro:macro>
+</robot>
